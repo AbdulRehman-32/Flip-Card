@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronos Voyages | Premium Time Travel Agency</title>
+    <!-- Google Fonts for premium typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for beautiful, clean icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cosmic Animated Background Particles -->
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+
+    <!-- Main Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-hourglass-half glow-icon"></i>
+            <span>CHRONOS <span class="accent-text">VOYAGES</span></span>
+        </div>
+        <nav class="nav-links">
+            <a href="#destinations" class="active">Destinations</a>
+            <a href="#technology">Technology</a>
+            <a href="#safety">Safety Protocol</a>
+        </nav>
+        <div class="nav-cta">
+            <button class="btn-portal" onclick="alert('Portal Engine Ready. Select a destination card below!')">Launch Portal</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1 class="hero-title">Where do you want to go <span class="typing-text">yesterday?</span></h1>
+        <p class="hero-subtitle">Step through the Chronos Gate. Experience the past, witness the future, and return safely. Guaranteed.</p>
+    </section>
+
+    <!-- Cards Section -->
+    <main class="wrapper" id="destinations">
+        
+        <!-- CARD 1: Cretaceous Safari -->
+        <div class="card">
+            <!-- Invisible checkbox that keeps track of the flipped state -->
+            <input type="checkbox" id="card1" class="card-toggle" aria-hidden="true">
+            <div class="card-inner">
+                
+                <!-- Front Face of Card -->
+                <div class="card-front" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(15, 23, 42, 0.95)), url('images/cretaceous.png');">
+                    <div class="card-tag tag-high">High Risk</div>
+                    <div class="card-front-content">
+                        <span class="destination-period">Mesozoic Era</span>
+                        <h2>Cretaceous Safari</h2>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="rating-val">4.8</span>
+                        </div>
+                        <label for="card1" class="btn-flip">Explore Era <i class="fa-solid fa-arrow-right"></i></label>
+                    </div>
+                </div>
+                
+                <!-- Back Face of Card -->
+                <div class="card-back">
+                    <div class="card-back-header">
+                        <div class="back-title">
+                            <span class="period-subtitle">VOYAGE SPECS</span>
+                            <h3>Cretaceous Safari</h3>
+                        </div>
+                        <span class="back-price">4.5 <span class="credits-label">Credits</span></span>
+                    </div>
+
+                    <!-- Specs Grid -->
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <span class="spec-label">Timeline</span>
+                            <span class="spec-value">-100M Yrs</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Duration</span>
+                            <span class="spec-value">5 Days</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Group Size</span>
+                            <span class="spec-value">6 Max</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Gear</span>
+                            <span class="spec-value">Shield</span>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <!-- Description -->
+                    <div class="description-section">
+                        <h4>Itinerary Highlights</h4>
+                        <p>Walk among the titans of prehistory. Trek through giant cycad forests, observe a nesting colony of Triceratops, and sleep safely under a state-of-the-art Chrono-Forcefield canopy.</p>
+                        <ul class="highlights-list">
+                            <li><i class="fa-solid fa-circle-check text-green"></i> T-Rex tracking from armored hovercraft</li>
+                            <li><i class="fa-solid fa-circle-check text-green"></i> Guided paleontology workshops</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-back-footer">
+                        <label for="card1" class="btn-return"><i class="fa-solid fa-arrow-left"></i> Back</label>
+                        <button class="btn-book" onclick="bookVoyage('Cretaceous Safari')">Book Tour</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- CARD 2: Neo-Tokyo Cyber-Pulse -->
+        <div class="card">
+            <!-- Invisible checkbox that keeps track of the flipped state -->
+            <input type="checkbox" id="card2" class="card-toggle" aria-hidden="true">
+            <div class="card-inner">
+                
+                <!-- Front Face of Card -->
+                <div class="card-front" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(15, 23, 42, 0.95)), url('images/neotokyo.png');">
+                    <div class="card-tag tag-medium">Medium Risk</div>
+                    <div class="card-front-content">
+                        <span class="destination-period">Future Timeline</span>
+                        <h2>Neo-Tokyo 2099</h2>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-val">5.0</span>
+                        </div>
+                        <label for="card2" class="btn-flip">Explore Future <i class="fa-solid fa-arrow-right"></i></label>
+                    </div>
+                </div>
+                
+                <!-- Back Face of Card -->
+                <div class="card-back">
+                    <div class="card-back-header">
+                        <div class="back-title">
+                            <span class="period-subtitle">VOYAGE SPECS</span>
+                            <h3>Neo-Tokyo 2099</h3>
+                        </div>
+                        <span class="back-price">6.2 <span class="credits-label">Credits</span></span>
+                    </div>
+
+                    <!-- Specs Grid -->
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <span class="spec-label">Timeline</span>
+                            <span class="spec-value">+73 Yrs</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Duration</span>
+                            <span class="spec-value">3 Nights</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Cyberware</span>
+                            <span class="spec-value">Included</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Gear</span>
+                            <span class="spec-value">Augments</span>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <!-- Description -->
+                    <div class="description-section">
+                        <h4>Itinerary Highlights</h4>
+                        <p>Plunge into the neon-drenched grid of a hyper-connected tomorrow. Explore high-tech street bazaars, ride supersonic maglev motorcycles, and sample neural-linked virtual foods.</p>
+                        <ul class="highlights-list">
+                            <li><i class="fa-solid fa-circle-check text-green"></i> Holographic sky-cruise at sunset</li>
+                            <li><i class="fa-solid fa-circle-check text-green"></i> Temporary neural translation chip</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-back-footer">
+                        <label for="card2" class="btn-return"><i class="fa-solid fa-arrow-left"></i> Back</label>
+                        <button class="btn-book" onclick="bookVoyage('Neo-Tokyo 2099')">Book Tour</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- CARD 3: Library of Alexandria -->
+        <div class="card">
+            <!-- Invisible checkbox that keeps track of the flipped state -->
+            <input type="checkbox" id="card3" class="card-toggle" aria-hidden="true">
+            <div class="card-inner">
+                
+                <!-- Front Face of Card -->
+                <div class="card-front" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(15, 23, 42, 0.95)), url('images/alexandria.png');">
+                    <div class="card-tag tag-low">Low Risk</div>
+                    <div class="card-front-content">
+                        <span class="destination-period">Classical Antiquity</span>
+                        <h2>Alexandria 48 BC</h2>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span class="rating-val">4.2</span>
+                        </div>
+                        <label for="card3" class="btn-flip">Explore Past <i class="fa-solid fa-arrow-right"></i></label>
+                    </div>
+                </div>
+                
+                <!-- Back Face of Card -->
+                <div class="card-back">
+                    <div class="card-back-header">
+                        <div class="back-title">
+                            <span class="period-subtitle">VOYAGE SPECS</span>
+                            <h3>Alexandria 48 BC</h3>
+                        </div>
+                        <span class="back-price">3.8 <span class="credits-label">Credits</span></span>
+                    </div>
+
+                    <!-- Specs Grid -->
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <span class="spec-label">Timeline</span>
+                            <span class="spec-value">-2,074 Yrs</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Duration</span>
+                            <span class="spec-value">1 Day</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Guides</span>
+                            <span class="spec-value">Scholars</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Gear</span>
+                            <span class="spec-value">Translator</span>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <!-- Description -->
+                    <div class="description-section">
+                        <h4>Itinerary Highlights</h4>
+                        <p>Walk the majestic marble arches of the ancient world's greatest archive. Sit with royal mathematicians, read scroll volumes lost to history, and enjoy the Mediterranean harbor breeze.</p>
+                        <ul class="highlights-list">
+                            <li><i class="fa-solid fa-circle-check text-green"></i> Audience with Egyptian royal scribes</li>
+                            <li><i class="fa-solid fa-circle-check text-green"></i> High-resolution scroll archiving scan</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-back-footer">
+                        <label for="card3" class="btn-return"><i class="fa-solid fa-arrow-left"></i> Back</label>
+                        <button class="btn-book" onclick="bookVoyage('Alexandria 48 BC')">Book Tour</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Booking Confirmation Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div class="modal-body">
+                <i class="fa-solid fa-circle-check success-icon"></i>
+                <h2>Voyage Reserved!</h2>
+                <p>Your timeline coordinates have been locked. Please step onto the launchpad.</p>
+                <div class="modal-details">
+                    <div><strong>Destination:</strong> <span id="modalDestName">Cretaceous Safari</span></div>
+                    <div><strong>Chronos Gate Status:</strong> <span class="text-green glow-text">READY</span></div>
+                </div>
+                <button class="btn-close-modal" onclick="closeModal()">Close Portal Interface</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Chronos Voyages Inc. All timelines preserved. Chrono-Paradox insurance required.</p>
+    </footer>
+
+    <!-- Interactive script for modal and subtle click sounds -->
+    <script>
+        function bookVoyage(destinationName) {
+            document.getElementById('modalDestName').innerText = destinationName;
+            document.getElementById('bookingModal').style.display = 'flex';
+            
+            // Play a sci-fi audio feedback sound
+            playAudioHum();
+        }
+
+        function closeModal() {
+            document.getElementById('bookingModal').style.display = 'none';
+        }
+
+        // Close modal if clicked outside
+        window.onclick = function(event) {
+            var modal = document.getElementById('bookingModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        // Web Audio API to create a neat sci-fi synthesizer click sound!
+        // This is 100% beginner-friendly and requires no external files.
+        function playAudioHum() {
+            try {
+                const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                
+                // Play a brief synth blip
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(440, audioCtx.currentTime); // A4 note
+                osc.frequency.exponentialRampToValueAtTime(880, audioCtx.currentTime + 0.15); // Slide up to A5
+                
+                gain.gain.setValueAtTime(0.1, audioCtx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.2);
+                
+                osc.connect(gain);
+                gain.connect(audioCtx.destination);
+                
+                osc.start();
+                osc.stop(audioCtx.currentTime + 0.2);
+            } catch (e) {
+                console.log("Audio not supported or interaction needed first.");
+            }
+        }
+    </script>
+</body>
+</html>
